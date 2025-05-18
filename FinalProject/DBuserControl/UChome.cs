@@ -24,7 +24,7 @@ namespace FinalProject.DBuserControl
 
         private void UChome_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(150, 0, 0, 0);
+         
         }
     }
 }

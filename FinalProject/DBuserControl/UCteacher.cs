@@ -36,7 +36,7 @@ namespace FinalProject.DBuserControl
             dt.Columns.Add("Average");
             dt.Columns.Add("Remarks");
 
-            dgvGradesInfo.DataSource = dt;
+            dgvStudent.DataSource = dt;
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -55,13 +55,13 @@ namespace FinalProject.DBuserControl
         private void btnDeleteAll_Click(object sender, EventArgs e)
         {
             //clear all the data in datagridview
-            ((DataTable)dgvGradesInfo.DataSource).Clear();
+            ((DataTable)dgvStudent.DataSource).Clear();
         }
 
         private void dgvGradesInfo_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             Index = e.RowIndex;
-            DataGridViewRow selectedRow = dgvGradesInfo.Rows[Index];
+            DataGridViewRow selectedRow = dgvStudent.Rows[Index];
             txtFirstname.Text = selectedRow.Cells[0].Value.ToString();
             txtLastname.Text = selectedRow.Cells[1].Value.ToString();
             txtMiddlename.Text = selectedRow.Cells[2].Value.ToString();
@@ -142,8 +142,8 @@ namespace FinalProject.DBuserControl
 
 
 
-                    int lastRowIndex = dgvGradesInfo.Rows.Count - 1;
-                    DataGridViewRow newdata = dgvGradesInfo.Rows[lastRowIndex];
+                    int lastRowIndex = dgvStudent.Rows.Count - 1;
+                    DataGridViewRow newdata = dgvStudent.Rows[lastRowIndex];
                 // Check if the average is greater than 3.1 and color the row red
                 if (average > 3.1f)
                 {
@@ -154,7 +154,7 @@ namespace FinalProject.DBuserControl
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            DataGridViewRow newdata = dgvGradesInfo.Rows[Index];
+            DataGridViewRow newdata = dgvStudent.Rows[Index];
             newdata.Cells[0].Value = txtFirstname.Text;
             newdata.Cells[1].Value = txtLastname.Text;
             newdata.Cells[2].Value = txtMiddlename.Text;
@@ -198,15 +198,15 @@ namespace FinalProject.DBuserControl
             newdata.Cells[8].Value = FinalAverage;
             newdata.Cells[9].Value = remarks;
             //update the datagridview
-            dgvGradesInfo.Refresh();
+            dgvStudent.Refresh();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Index = dgvGradesInfo.CurrentCell.RowIndex;
+            Index = dgvStudent.CurrentCell.RowIndex;
             if (Index != -1)
             {
-                dgvGradesInfo.Rows.RemoveAt(Index);
+                dgvStudent.Rows.RemoveAt(Index);
                 txtFirstname.Text = string.Empty;
                 txtLastname.Text = string.Empty;
                 txtMiddlename.Text = string.Empty;

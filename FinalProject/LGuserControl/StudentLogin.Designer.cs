@@ -95,7 +95,7 @@
             this.txtSUPassword.Location = new System.Drawing.Point(58, 180);
             this.txtSUPassword.Name = "txtSUPassword";
             this.txtSUPassword.Size = new System.Drawing.Size(227, 20);
-            this.txtSUPassword.TabIndex = 13;
+            this.txtSUPassword.TabIndex = 7;
             this.txtSUPassword.UseSystemPasswordChar = true;
             // 
             // lblOr
@@ -129,7 +129,7 @@
             this.btnGmail.Location = new System.Drawing.Point(184, 323);
             this.btnGmail.Name = "btnGmail";
             this.btnGmail.Size = new System.Drawing.Size(101, 23);
-            this.btnGmail.TabIndex = 10;
+            this.btnGmail.TabIndex = 12;
             this.btnGmail.Text = "GMAIL";
             this.btnGmail.UseVisualStyleBackColor = false;
             this.btnGmail.Click += new System.EventHandler(this.btnGmail_Click);
@@ -142,7 +142,7 @@
             this.btnFacebook.Location = new System.Drawing.Point(58, 323);
             this.btnFacebook.Name = "btnFacebook";
             this.btnFacebook.Size = new System.Drawing.Size(97, 23);
-            this.btnFacebook.TabIndex = 9;
+            this.btnFacebook.TabIndex = 11;
             this.btnFacebook.Text = "FACEBOOK";
             this.btnFacebook.UseVisualStyleBackColor = false;
             this.btnFacebook.Click += new System.EventHandler(this.btnFacebook_Click);
@@ -155,7 +155,7 @@
             this.btnSignUp.Location = new System.Drawing.Point(58, 268);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(227, 28);
-            this.btnSignUp.TabIndex = 8;
+            this.btnSignUp.TabIndex = 10;
             this.btnSignUp.Text = "SIGN UP";
             this.btnSignUp.UseVisualStyleBackColor = true;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
@@ -165,7 +165,7 @@
             this.txtGmail.Location = new System.Drawing.Point(58, 234);
             this.txtGmail.Name = "txtGmail";
             this.txtGmail.Size = new System.Drawing.Size(227, 20);
-            this.txtGmail.TabIndex = 7;
+            this.txtGmail.TabIndex = 9;
             // 
             // txtSUlastname
             // 
@@ -187,7 +187,7 @@
             this.txtLoginName.Location = new System.Drawing.Point(50, 118);
             this.txtLoginName.Name = "txtLoginName";
             this.txtLoginName.Size = new System.Drawing.Size(227, 22);
-            this.txtLoginName.TabIndex = 3;
+            this.txtLoginName.TabIndex = 0;
             this.txtLoginName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtLoginPassword
@@ -196,7 +196,7 @@
             this.txtLoginPassword.Location = new System.Drawing.Point(50, 165);
             this.txtLoginPassword.Name = "txtLoginPassword";
             this.txtLoginPassword.Size = new System.Drawing.Size(227, 22);
-            this.txtLoginPassword.TabIndex = 4;
+            this.txtLoginPassword.TabIndex = 1;
             this.txtLoginPassword.UseSystemPasswordChar = true;
             this.txtLoginPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -208,7 +208,7 @@
             this.btnLogin.Location = new System.Drawing.Point(50, 268);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(227, 28);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -221,7 +221,7 @@
             this.btnBack.Location = new System.Drawing.Point(3, 3);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(55, 26);
-            this.btnBack.TabIndex = 7;
+            this.btnBack.TabIndex = 13;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -234,7 +234,7 @@
             this.chkShow.Location = new System.Drawing.Point(175, 202);
             this.chkShow.Name = "chkShow";
             this.chkShow.Size = new System.Drawing.Size(102, 17);
-            this.chkShow.TabIndex = 8;
+            this.chkShow.TabIndex = 2;
             this.chkShow.Text = "Show Password";
             this.chkShow.UseVisualStyleBackColor = false;
             this.chkShow.CheckedChanged += new System.EventHandler(this.chkShow_CheckedChanged);
@@ -247,7 +247,7 @@
             this.lnkForget.Location = new System.Drawing.Point(113, 241);
             this.lnkForget.Name = "lnkForget";
             this.lnkForget.Size = new System.Drawing.Size(95, 13);
-            this.lnkForget.TabIndex = 9;
+            this.lnkForget.TabIndex = 3;
             this.lnkForget.TabStop = true;
             this.lnkForget.Text = "Forgot Password ?";
             this.lnkForget.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
@@ -332,7 +332,7 @@
             this.chkSignUpPassword.Location = new System.Drawing.Point(183, 202);
             this.chkSignUpPassword.Name = "chkSignUpPassword";
             this.chkSignUpPassword.Size = new System.Drawing.Size(102, 17);
-            this.chkSignUpPassword.TabIndex = 18;
+            this.chkSignUpPassword.TabIndex = 8;
             this.chkSignUpPassword.Text = "Show Password";
             this.chkSignUpPassword.UseVisualStyleBackColor = false;
             this.chkSignUpPassword.CheckedChanged += new System.EventHandler(this.chkSignUpPassword_CheckedChanged);

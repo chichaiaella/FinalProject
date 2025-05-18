@@ -38,6 +38,7 @@
             this.btnTeacher = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlNavbar.SuspendLayout();
             this.SuspendLayout();
@@ -45,6 +46,7 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.Transparent;
+            this.pnlHeader.Controls.Add(this.lblHeader);
             this.pnlHeader.Controls.Add(this.lblName);
             this.pnlHeader.Controls.Add(this.lblLogout);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
@@ -164,6 +166,18 @@
             this.pnlMain.Size = new System.Drawing.Size(884, 351);
             this.pnlMain.TabIndex = 2;
             // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeader.Font = new System.Drawing.Font("Lucida Calligraphy", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(12, 9);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(228, 36);
+            this.lblHeader.TabIndex = 2;
+            this.lblHeader.Text = "UNIVERSITY";
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,5 +211,6 @@
         private System.Windows.Forms.Panel pnlMain;
         private System.Windows.Forms.Label lblLogout;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label lblHeader;
     }
 }

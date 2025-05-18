@@ -47,10 +47,10 @@
             this.btnDeleteAll = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.dgvGradesInfo = new System.Windows.Forms.DataGridView();
+            this.dgvStudent = new System.Windows.Forms.DataGridView();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGradesInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSub
@@ -257,15 +257,15 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // dgvGradesInfo
+            // dgvStudent
             // 
-            this.dgvGradesInfo.AllowUserToAddRows = false;
-            this.dgvGradesInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGradesInfo.Location = new System.Drawing.Point(321, 80);
-            this.dgvGradesInfo.Name = "dgvGradesInfo";
-            this.dgvGradesInfo.Size = new System.Drawing.Size(550, 239);
-            this.dgvGradesInfo.TabIndex = 57;
-            this.dgvGradesInfo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGradesInfo_CellClick);
+            this.dgvStudent.AllowUserToAddRows = false;
+            this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudent.Location = new System.Drawing.Point(321, 80);
+            this.dgvStudent.Name = "dgvStudent";
+            this.dgvStudent.Size = new System.Drawing.Size(550, 239);
+            this.dgvStudent.TabIndex = 57;
+            this.dgvStudent.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGradesInfo_CellClick);
             // 
             // btnUpdate
             // 
@@ -299,7 +299,7 @@
             this.Controls.Add(this.btnDeleteAll);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dgvGradesInfo);
+            this.Controls.Add(this.dgvStudent);
             this.Controls.Add(this.lblSub);
             this.Controls.Add(this.lblFinal);
             this.Controls.Add(this.lblMidterm);
@@ -319,7 +319,7 @@
             this.Name = "Main";
             this.Size = new System.Drawing.Size(884, 351);
             this.Load += new System.EventHandler(this.Main_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvGradesInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -346,7 +346,7 @@
         private System.Windows.Forms.Button btnDeleteAll;
         private System.Windows.Forms.Button btnNew;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.DataGridView dgvGradesInfo;
+        private System.Windows.Forms.DataGridView dgvStudent;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
     }
