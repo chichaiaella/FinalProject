@@ -30,21 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainLogin));
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picStudent = new System.Windows.Forms.PictureBox();
             this.btnStudent = new System.Windows.Forms.Button();
             this.pnlTeacher = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.picTeacher = new System.Windows.Forms.PictureBox();
             this.btnTeacher = new System.Windows.Forms.Button();
             this.pnlLogin.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStudent)).BeginInit();
             this.pnlTeacher.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTeacher)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlLogin
             // 
             this.pnlLogin.BackColor = System.Drawing.Color.Transparent;
-            this.pnlLogin.Controls.Add(this.pictureBox1);
+            this.pnlLogin.Controls.Add(this.picStudent);
             this.pnlLogin.Controls.Add(this.btnStudent);
             this.pnlLogin.Controls.Add(this.pnlTeacher);
             this.pnlLogin.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -54,17 +54,17 @@
             this.pnlLogin.TabIndex = 1;
             this.pnlLogin.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLogin_Paint);
             // 
-            // pictureBox1
+            // picStudent
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(93, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(146, 234);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.picStudent.BackColor = System.Drawing.Color.Transparent;
+            this.picStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picStudent.BackgroundImage")));
+            this.picStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picStudent.Location = new System.Drawing.Point(93, 32);
+            this.picStudent.Name = "picStudent";
+            this.picStudent.Size = new System.Drawing.Size(146, 234);
+            this.picStudent.TabIndex = 3;
+            this.picStudent.TabStop = false;
+            this.picStudent.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnStudent
             // 
@@ -82,7 +82,7 @@
             // 
             // pnlTeacher
             // 
-            this.pnlTeacher.Controls.Add(this.pictureBox2);
+            this.pnlTeacher.Controls.Add(this.picTeacher);
             this.pnlTeacher.Controls.Add(this.btnTeacher);
             this.pnlTeacher.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlTeacher.Location = new System.Drawing.Point(340, 0);
@@ -91,17 +91,17 @@
             this.pnlTeacher.TabIndex = 0;
             this.pnlTeacher.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTeacher_Paint);
             // 
-            // pictureBox2
+            // picTeacher
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 18);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(219, 261);
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.picTeacher.BackColor = System.Drawing.Color.Transparent;
+            this.picTeacher.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picTeacher.BackgroundImage")));
+            this.picTeacher.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picTeacher.Location = new System.Drawing.Point(31, 18);
+            this.picTeacher.Name = "picTeacher";
+            this.picTeacher.Size = new System.Drawing.Size(219, 261);
+            this.picTeacher.TabIndex = 4;
+            this.picTeacher.TabStop = false;
+            this.picTeacher.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // btnTeacher
             // 
@@ -126,9 +126,9 @@
             this.Load += new System.EventHandler(this.MainLogin_Load);
             this.Click += new System.EventHandler(this.MainLogin_Click);
             this.pnlLogin.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picStudent)).EndInit();
             this.pnlTeacher.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTeacher)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -136,10 +136,10 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlLogin;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picStudent;
         private System.Windows.Forms.Button btnStudent;
         private System.Windows.Forms.Panel pnlTeacher;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox picTeacher;
         private System.Windows.Forms.Button btnTeacher;
     }
 }

@@ -30,6 +30,11 @@
         {
             this.lblHeaderLOGIN = new System.Windows.Forms.Label();
             this.pnlSignup = new System.Windows.Forms.Panel();
+            this.chkSignUpPassword = new System.Windows.Forms.CheckBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblLastname = new System.Windows.Forms.Label();
+            this.lblPassSign = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.txtSUPassword = new System.Windows.Forms.TextBox();
             this.lblOr = new System.Windows.Forms.Label();
             this.lblSignUp = new System.Windows.Forms.Label();
@@ -47,11 +52,6 @@
             this.lnkForget = new System.Windows.Forms.LinkLabel();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.lblPassSign = new System.Windows.Forms.Label();
-            this.lblLastname = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.chkSignUpPassword = new System.Windows.Forms.CheckBox();
             this.pnlSignup.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,67 @@
             this.pnlSignup.Name = "pnlSignup";
             this.pnlSignup.Size = new System.Drawing.Size(325, 353);
             this.pnlSignup.TabIndex = 2;
+            // 
+            // chkSignUpPassword
+            // 
+            this.chkSignUpPassword.AutoSize = true;
+            this.chkSignUpPassword.BackColor = System.Drawing.Color.Transparent;
+            this.chkSignUpPassword.ForeColor = System.Drawing.Color.White;
+            this.chkSignUpPassword.Location = new System.Drawing.Point(183, 202);
+            this.chkSignUpPassword.Name = "chkSignUpPassword";
+            this.chkSignUpPassword.Size = new System.Drawing.Size(102, 17);
+            this.chkSignUpPassword.TabIndex = 8;
+            this.chkSignUpPassword.Text = "Show Password";
+            this.chkSignUpPassword.UseVisualStyleBackColor = false;
+            this.chkSignUpPassword.CheckedChanged += new System.EventHandler(this.chkSignUpPassword_CheckedChanged);
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(58, 215);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(41, 16);
+            this.lblEmail.TabIndex = 17;
+            this.lblEmail.Text = "Email";
+            // 
+            // lblLastname
+            // 
+            this.lblLastname.AutoSize = true;
+            this.lblLastname.BackColor = System.Drawing.Color.Transparent;
+            this.lblLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLastname.ForeColor = System.Drawing.Color.White;
+            this.lblLastname.Location = new System.Drawing.Point(55, 108);
+            this.lblLastname.Name = "lblLastname";
+            this.lblLastname.Size = new System.Drawing.Size(72, 16);
+            this.lblLastname.TabIndex = 16;
+            this.lblLastname.Text = "Last Name";
+            // 
+            // lblPassSign
+            // 
+            this.lblPassSign.AutoSize = true;
+            this.lblPassSign.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassSign.ForeColor = System.Drawing.Color.White;
+            this.lblPassSign.Location = new System.Drawing.Point(58, 161);
+            this.lblPassSign.Name = "lblPassSign";
+            this.lblPassSign.Size = new System.Drawing.Size(67, 16);
+            this.lblPassSign.TabIndex = 15;
+            this.lblPassSign.Text = "Password";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.Color.White;
+            this.lblName.Location = new System.Drawing.Point(55, 59);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(72, 16);
+            this.lblName.TabIndex = 14;
+            this.lblName.Text = "First Name";
             // 
             // txtSUPassword
             // 
@@ -183,6 +244,7 @@
             // 
             // txtLoginName
             // 
+            this.txtLoginName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLoginName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLoginName.Location = new System.Drawing.Point(50, 118);
             this.txtLoginName.Name = "txtLoginName";
@@ -275,67 +337,6 @@
             this.lblPassword.Size = new System.Drawing.Size(67, 16);
             this.lblPassword.TabIndex = 11;
             this.lblPassword.Text = "Password";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.Color.White;
-            this.lblName.Location = new System.Drawing.Point(55, 59);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(72, 16);
-            this.lblName.TabIndex = 14;
-            this.lblName.Text = "First Name";
-            // 
-            // lblPassSign
-            // 
-            this.lblPassSign.AutoSize = true;
-            this.lblPassSign.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassSign.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPassSign.ForeColor = System.Drawing.Color.White;
-            this.lblPassSign.Location = new System.Drawing.Point(58, 161);
-            this.lblPassSign.Name = "lblPassSign";
-            this.lblPassSign.Size = new System.Drawing.Size(67, 16);
-            this.lblPassSign.TabIndex = 15;
-            this.lblPassSign.Text = "Password";
-            // 
-            // lblLastname
-            // 
-            this.lblLastname.AutoSize = true;
-            this.lblLastname.BackColor = System.Drawing.Color.Transparent;
-            this.lblLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastname.ForeColor = System.Drawing.Color.White;
-            this.lblLastname.Location = new System.Drawing.Point(55, 108);
-            this.lblLastname.Name = "lblLastname";
-            this.lblLastname.Size = new System.Drawing.Size(72, 16);
-            this.lblLastname.TabIndex = 16;
-            this.lblLastname.Text = "Last Name";
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(58, 215);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(41, 16);
-            this.lblEmail.TabIndex = 17;
-            this.lblEmail.Text = "Email";
-            // 
-            // chkSignUpPassword
-            // 
-            this.chkSignUpPassword.AutoSize = true;
-            this.chkSignUpPassword.BackColor = System.Drawing.Color.Transparent;
-            this.chkSignUpPassword.ForeColor = System.Drawing.Color.White;
-            this.chkSignUpPassword.Location = new System.Drawing.Point(183, 202);
-            this.chkSignUpPassword.Name = "chkSignUpPassword";
-            this.chkSignUpPassword.Size = new System.Drawing.Size(102, 17);
-            this.chkSignUpPassword.TabIndex = 8;
-            this.chkSignUpPassword.Text = "Show Password";
-            this.chkSignUpPassword.UseVisualStyleBackColor = false;
-            this.chkSignUpPassword.CheckedChanged += new System.EventHandler(this.chkSignUpPassword_CheckedChanged);
             // 
             // StudentLogin
             // 

@@ -119,14 +119,17 @@ namespace FinalProject
             }
             else
             {
-
-                // Assuming you want to store the signup information
                 name = txtSUname.Text;
                 lastname = txtSUlastname.Text;
                 password = txtSUPassword.Text;
                 email = txtGmail.Text;
 
                 MessageBox.Show("Sign up successful");
+
+                txtGmail.Clear();
+                txtSUlastname.Clear();
+                txtSUname.Clear();
+                txtSUPassword.Clear();
             }
         }
 

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
             this.pnlHeader = new System.Windows.Forms.Panel();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblLogout = new System.Windows.Forms.Label();
             this.pnlNavbar = new System.Windows.Forms.Panel();
@@ -38,7 +39,6 @@
             this.btnTeacher = new System.Windows.Forms.Button();
             this.btnAbout = new System.Windows.Forms.Button();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.lblHeader = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
             this.pnlNavbar.SuspendLayout();
             this.SuspendLayout();
@@ -54,6 +54,18 @@
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(884, 56);
             this.pnlHeader.TabIndex = 0;
+            // 
+            // lblHeader
+            // 
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
+            this.lblHeader.Font = new System.Drawing.Font("Lucida Calligraphy", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(12, 9);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(228, 36);
+            this.lblHeader.TabIndex = 2;
+            this.lblHeader.Text = "UNIVERSITY";
             // 
             // lblName
             // 
@@ -165,18 +177,6 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(884, 351);
             this.pnlMain.TabIndex = 2;
-            // 
-            // lblHeader
-            // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.BackColor = System.Drawing.Color.Transparent;
-            this.lblHeader.Font = new System.Drawing.Font("Lucida Calligraphy", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(12, 9);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(228, 36);
-            this.lblHeader.TabIndex = 2;
-            this.lblHeader.Text = "UNIVERSITY";
             // 
             // dashboard
             // 
